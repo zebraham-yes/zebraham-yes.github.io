@@ -107,11 +107,11 @@ article h3 {
 
 <nav class="navbar">
     <ul>
+        <li><a href="index.html" id="nav-home">首页</a></li>
         <li><a href="research.html" id="nav-research">学术研究</a></li>
         <li><a href="honors.html" id="nav-honors">荣誉资质</a></li>
         <li><a href="projects.html" id="nav-projects">项目探索</a></li>
         <li><a href="others.html" id="nav-others">其它创作</a></li>
-        <li><a href="index.html" id="nav-home">首页</a></li>
         <li class="lang-switch">
             <button onclick="toggleLanguage()">EN/中文</button>
         </li>
@@ -126,6 +126,24 @@ article h3 {
 
 <section class="container">
     <h2 id="projects-title">Project Experience</h2>
+    <article>
+        <h3 id="project-2-title">Internal Reference Reports</h3>
+        <p id="project-2-desc">Authored multiple internal reference reports for policy advisory. Primary authored reports include "Forging Self-Controlled Strategic Longboards: Research on Supply Risk and Substitution Progress Based on Supply Chain Big Data" and "Impact of US Department of Commerce 'Entity List + Military End-User List Penetration Rules' on the Integrated Circuit Industry." Co-authored "Difficulties and Constraints Facing China's Logistics Industry and Their Impact on Economic Development: Development Suggestions."</p>
+    </article>
+    <article>
+        <h3 id="project-3-title">Industry Research Reports</h3>
+        <p id="project-3-desc">Led and co-authored various industry research reports. Led the semiconductor section of the China Federation of Logistics & Purchasing's "2024 China Electronics Industry Development Report." Co-authored Wenchang International Aerospace City's "Hainan Satellite Application Industry Research Analysis Report" and "2021 China Big Data Industry Development Index White Paper."</p>
+    </article>
+    <article>
+        <h3 id="project-4-title">"Dream Catcher" AI Role-Playing Game Assistant Project and Script Intelligent Processing Research</h3>
+        <p id="project-4-date">Feb 2026</p>
+        <p id="project-4-desc">Utilized Agent technology and large language model memory management to lead the development of a role-playing game story generator and AI host. Won third prize in the 2026 "Geekathon" Entrepreneurship Competition at Peking University.</p>
+    </article>
+    <article>
+        <h3 id="project-5-title">Peking University GeekLab Personnel Management System Design</h3>
+        <p id="project-5-date">May 2025</p>
+        <p id="project-5-desc">Led the design of a personnel management system for Peking University's GeekLab, utilizing knowledge graphs and large language model retrieval-augmented generation (RAG) technologies to enable efficient talent management and rapid formation of entrepreneurial teams.</p>
+    </article>
     <article>
         <h3 id="project-1-title">Object-Based CNN on UAV Image Segmentation (Innovation Fund for University Student at RUC)</h3>
         <p id="project-1-date">Sep 2020 - Nov 2021</p>
@@ -145,6 +163,16 @@ const translations = {
         'nav-home': 'Home',
         'main-title': 'Bohan Jin - Project Experience',
         'projects-title': 'Project Experience',
+        'project-2-title': 'Internal Reference Reports',
+        'project-2-desc': 'Authored multiple internal reference reports for policy advisory. Primary authored reports include "Forging Self-Controlled Strategic Longboards: Research on Supply Risk and Substitution Progress Based on Supply Chain Big Data" and "Impact of US Department of Commerce "Entity List + Military End-User List Penetration Rules" on the Integrated Circuit Industry." Co-authored "Difficulties and Constraints Facing China\'s Logistics Industry and Their Impact on Economic Development: Development Suggestions."',
+        'project-3-title': 'Industry Research Reports',
+        'project-3-desc': 'Led and co-authored various industry research reports. Led the semiconductor section of the China Federation of Logistics & Purchasing\'s "2024 China Electronics Industry Development Report." Co-authored Wenchang International Aerospace City\'s "Hainan Satellite Application Industry Research Analysis Report" and "2021 China Big Data Industry Development Index White Paper."',
+        'project-4-title': '"Dream Catcher" AI Role-Playing Game Assistant Project and Script Intelligent Processing Research',
+        'project-4-date': 'Feb 2026',
+        'project-4-desc': 'Utilized Agent technology and large language model memory management to lead the development of a role-playing game story generator and AI host. Won third prize in the 2026 "Geekathon" Entrepreneurship Competition at Peking University.',
+        'project-5-title': 'Peking University GeekLab Personnel Management System Design',
+        'project-5-date': 'May 2025',
+        'project-5-desc': 'Led the design of a personnel management system for Peking University\'s GeekLab, utilizing knowledge graphs and large language model retrieval-augmented generation (RAG) technologies to enable efficient talent management and rapid formation of entrepreneurial teams.',
         'project-1-title': 'Object-Based CNN on UAV Image Segmentation (Innovation Fund for University Student at RUC)',
         'project-1-date': 'Sep 2020 - Nov 2021',
         'project-1-desc': 'Operated under a state-funded College Student Innovative Experiment Program.'
@@ -155,8 +183,18 @@ const translations = {
         'nav-projects': '项目探索',
         'nav-others': '其它创作',
         'nav-home': '首页',
-        'main-title': '金博涵 - 项目经历',
+        'main-title': '金泊翰 - 项目经历',
         'projects-title': '项目经历',
+        'project-2-title': '内参报告',
+        'project-2-desc': '多次主持和参与编写内参报告。曾主笔内参《锻造自主可控的战略长板—基于供应链大数据的断供风险与替代进展研究》《美国商务部"实体清单+军事最终用户清单穿透规则"对集成电路产业的影响》，参与编写《我国物流行业面临的困难、制约及对经济发展影响与发展建议》。',
+        'project-3-title': '行业研究报告',
+        'project-3-desc': '主持编写各类行业研究报告。主持编写中国物流与采购联合会《2024中国电子产业发展报告》半导体部分，参与编写文昌国际航天城《海南卫星应用该产业调研分析报告》和《2021年中国大数据产业发展指数白皮书》等报告。',
+        'project-4-title': '主持"捕梦"AI角色扮演游戏助手项目和剧本智能化处理',
+        'project-4-date': '2026年2月',
+        'project-4-desc': '使用Agent技术大语言模型记忆管理，主持开发角色扮演游戏故事生成器和AI主持人。在北京大学2026年"极客松"创业比赛中获得三等奖。',
+        'project-5-title': '主持设计北京大学极客实验室人员管理系统',
+        'project-5-date': '2025年5月',
+        'project-5-desc': '基于知识图谱、大语言模型检索增强生成等技术，帮助极客实验室实现高效的人才管理和创业团队的快速组建。',
         'project-1-title': '基于对象的无人机图像分割CNN（中国人民大学大学生创新实验计划项目）',
         'project-1-date': '2020年9月 - 2021年11月',
         'project-1-desc': '在国家级大学生创新创业训练计划下开展研究'

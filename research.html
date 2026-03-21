@@ -122,6 +122,9 @@ h3 {
     color: #666;
     font-style: italic;
 }
+.journal-normal {
+    color: #666;
+}
 .doi-link {
     color: #50b3a2;
     text-decoration: none;
@@ -135,11 +138,11 @@ h3 {
 
 <nav class="navbar">
     <ul>
+        <li><a href="index.html" id="nav-home">首页</a></li>
         <li><a href="research.html" id="nav-research">学术研究</a></li>
         <li><a href="honors.html" id="nav-honors">荣誉资质</a></li>
         <li><a href="projects.html" id="nav-projects">项目探索</a></li>
         <li><a href="others.html" id="nav-others">其它创作</a></li>
-        <li><a href="index.html" id="nav-home">首页</a></li>
         <li class="lang-switch">
             <button onclick="toggleLanguage()">EN/中文</button>
         </li>
@@ -159,41 +162,58 @@ h3 {
         <h3 id="research-1-title">一、供应链数据智能</h3>
         <p><span class="tag">博士课题</span><span id="research-1-subtitle">《大语言模型在供应链网络自动化采集中的应用研究》</span></p>
         <p id="research-1-desc">探索利用大语言模型技术实现供应链网络数据的自动化采集与知识图谱构建</p>
-        <hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
-        <p><strong id="research-1a-paper">《Enhancing Supply Chain Transparency in Emerging Economies Using Online Contents and LLMs》</strong></p>
-        <p><a href="https://doi.org/10.1109/ICOIN63865.2025.10993099" target="_blank" class="doi-link">DOI: 10.1109/ICOIN63865.2025.10993099</a></p>
-        <p><span class="tag">国际会议</span><span class="journal" id="research-1a-journal">International Conference of Information Networking (ICOIN)</span></p>
-        <p id="research-1a-authors">Bohan Jin; Qianyou Sun; Lihua Chen</p>
-        <hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
-        <p><strong id="research-1b-paper">《Directed Dynamic Network Edge Interpolation: Taking Supply Chain Networks As an Example》</strong></p>
-        <p class="journal" id="research-1b-status">英文期刊在研，聚焦动态网络连边缺失补全，预测企业潜在供应链关系</p>
-        <hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
-        <p><strong id="research-1c-paper">《从点状到矩阵——物流统计产品及其工具方法建设的比较与展望》</strong></p>
-        <p id="research-1c-authors">金泊翰; 陈丽华; 郭茜; 赵彦云</p>
-        <p><span class="tag">中文期刊</span><span class="journal">《物流研究》</span> | <span id="research-1c-status">已接收</span></p>
+        <div style="display: flex; align-items: flex-start; gap: 20px;">
+            <div style="flex: 1;">
+                <hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
+                <p><span class="tag">国际会议</span><strong id="research-1a-paper">《Enhancing Supply Chain Transparency in Emerging Economies Using Online Contents and LLMs》</strong></p>
+                <p id="research-1a-authors">Bohan Jin; Qianyou Sun; Lihua Chen</p>
+                <p><span class="journal" id="research-1a-journal">International Conference of Information Networking (ICOIN)</span> | <a href="https://doi.org/10.1109/ICOIN63865.2025.10993099" target="_blank" class="doi-link">DOI: 10.1109/ICOIN63865.2025.10993099</a></p>
+                <hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
+                <p><span class="tag">工作论文</span><strong id="research-1b-paper">《Directed Dynamic Network Edge Interpolation: Taking Supply Chain Networks As an Example》</strong></p>
+                <p class="journal-normal" id="research-1b-status">英文期刊在研，聚焦动态网络连边缺失补全，预测企业潜在供应链关系</p>
+                <hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
+                <p><span class="tag">中文期刊</span><strong id="research-1c-paper">《从点状到矩阵——物流统计产品及其工具方法建设的比较与展望》</strong></p>
+                <p id="research-1c-authors">金泊翰; 陈丽华; 郭茜; 赵彦云</p>
+                <p><span class="journal">《物流研究》</span> | <span id="research-1c-status">已接收</span></p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 20px; flex-shrink: 0;">
+                <img src="img/研究1-供应链数据智能.png" alt="供应链数据智能" style="width: 300px; max-width: 300px; border-radius: 4px;">
+                <img src="img/从点状到矩阵.jpg" alt="从点状到矩阵" style="width: 300px; max-width: 300px; border-radius: 4px;">
+            </div>
+        </div>
     </div>
 
     <div class="research-item">
         <h3 id="research-2-title">二、遥感与数据科学交叉</h3>
-        <p><strong id="research-2-paper">《Global Surface HCHO Distribution Derived from Satellite Observations with Neural Networks Technique》</strong></p>
-        <p><a href="https://doi.org/10.3390/rs13204055" target="_blank" class="doi-link">DOI: 10.3390/rs13204055</a></p>
-        <p id="research-2-authors">Jian Guan; Bohan Jin; Yizhe Ding; Wen Wang; Guoxiang Li; Pubu Ciren</p>
-        <p><span class="tag">SCI期刊</span><span class="journal">Remote Sensing</span>
-        <p id="research-2-desc">承担神经网络建模与卫星数据处理工作</p>
+        <div style="display: flex; align-items: flex-start; gap: 20px;">
+            <div style="flex: 1;">
+                <p><span class="tag">工作论文</span><strong id="research-2a-paper">《基于时空与在线语料数据的物流园区识别、分类与时空演化分析》</strong></p>
+                <p id="research-2a-authors">孙抒扬; 金泊翰; 王汶; 郭茜</p>
+                <p id="research-2a-desc">借助多模态大模型融合POI数据、遥感影像与互联网信息，实现物流园区自动化识别与时空演化分析，为物流基础设施普查提供技术路径</p>
+                <hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
+                <p><span class="tag">SCI期刊</span><strong id="research-2b-paper">《Global Surface HCHO Distribution Derived from Satellite Observations with Neural Networks Technique》</strong></p>
+                <p id="research-2b-authors">Jian Guan; Bohan Jin; Yizhe Ding; Wen Wang; Guoxiang Li; Pubu Ciren</p>
+                <p><span class="journal">Remote Sensing</span> | <a href="https://doi.org/10.3390/rs13204055" target="_blank" class="doi-link">DOI: 10.3390/rs13204055</a></p>
+                <p id="research-2b-desc">承担神经网络建模与卫星数据处理工作</p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 20px; flex-shrink: 0;">
+                <img src="img/重点到达机场.jpg" alt="重点到达机场" style="width: 300px; max-width: 300px; border-radius: 4px;">
+                <img src="img/HCHO研究.png" alt="HCHO研究" style="width: 300px; max-width: 300px; border-radius: 4px;">
+            </div>
+        </div>
     </div>
 
     <div class="research-item">
         <h3 id="research-3-title">三、案例与社会研究</h3>
-        <p><strong id="research-3-paper">《可持续价值共创:乡村振兴视域下数字平台企业可持续社会价值创造——基于腾讯酉阳共富乡村的案例研究》</strong></p>
-        <p><a href="https://doi.org/10.16110/j.cnki.issn2095-3151.2023.09.008" target="_blank" class="doi-link">DOI: 10.16110/j.cnki.issn2095-3151.2023.09.008</a></p>
-        <p><span class="tag">中文期刊</span><span class="journal">《经济研究参考》</span></p>
+        <p><span class="tag">中文期刊</span><strong id="research-3-paper">《可持续价值共创:乡村振兴视域下数字平台企业可持续社会价值创造——基于腾讯酉阳共富乡村的案例研究》</strong></p>
         <p id="research-3-authors">雷明; 王钰晴; 吴欣雅; 金泊翰</p>
+        <p><span class="journal">《经济研究参考》</span> | <a href="https://doi.org/10.16110/j.cnki.issn2095-3151.2023.09.008" target="_blank" class="doi-link">DOI: 10.16110/j.cnki.issn2095-3151.2023.09.008</a></p>
     </div>
 
     <div class="research-item">
         <h3 id="research-4-title">四、综述与科普</h3>
-        <p><strong id="research-4a-paper">《管理科学: 以理工的思维观察复杂世界》</strong></p>
-        <p><span class="tag">科普文章</span><span class="journal">《中学生天地（B版）》</span></p>
+        <p><span class="tag">科普文章</span><strong id="research-4a-paper">《管理科学: 以理工的思维观察复杂世界》</strong></p>
+        <p><span class="journal">《中学生天地（B版）》</span></p>
     </div>
 </section>
 
@@ -221,11 +241,11 @@ const translations = {
         'research-1c-authors': 'Jin Bohan; Chen Lihua; Guo Qian; Zhao Yanyun',
         'research-1c-status': 'Accepted (First Author)',
         'research-2-title': 'II. Intersection of Environment and Data Science',
-        'research-2-paper': 'Global Surface HCHO Distribution Derived from Satellite Observations with Neural Networks Technique',
-        'research-2-authors': 'Jian Guan; Bohan Jin; Yizhe Ding; Wen Wang; Guoxiang Li; Pubu Ciren',
-        'research-2-author': 'Co-first Author',
-        'research-2-citation': 'Cited 17 times',
-        'research-2-desc': 'Responsible for neural network modeling and satellite data processing',
+        'research-2a-paper': 'Logistics Park Identification, Classification, and Spatiotemporal Evolution Analysis Based on Spatiotemporal and Online Corpus Data',
+        'research-2a-authors': 'Sun Shuyang; Jin Bohan; Wang Wen; Guo Qian',
+        'research-2a-desc': 'Using multimodal large models to fuse POI data, remote sensing images, and online information to achieve automated identification and spatiotemporal evolution analysis of logistics parks, providing technical pathways for logistics infrastructure surveys',
+        'research-2b-paper': 'Global Surface HCHO Distribution Derived from Satellite Observations with Neural Networks Technique',
+        'research-2b-authors': 'Jian Guan; Bohan Jin; Yizhe Ding; Wen Wang; Guoxiang Li; Pubu Ciren',
         'research-3-title': 'III. Case Studies and Social Research',
         'research-3-paper': 'Sustainable Value Co-creation: Sustainable Social Value Creation of Digital Platform Enterprises from the Perspective of Rural Revitalization—Based on Tencent Youyang Common Prosperity Rural Case Study',
         'research-3-authors': 'Lei Ming; Wang Yuqing; Wu Xinya; Jin Bohan',
@@ -238,25 +258,25 @@ const translations = {
         'nav-projects': '项目探索',
         'nav-others': '其它创作',
         'nav-home': '首页',
-        'main-title': '金博涵 - 学术研究',
+        'main-title': '金泊翰 - 学术研究',
         'research-areas-title': '研究方向与论文发表',
         'research-1-title': '一、供应链数据智能',
-        'research-1-subtitle': '模块1：《大语言模型在供应链网络自动化采集中的应用研究》',
+        'research-1-subtitle': '《大语言模型在供应链网络自动化采集中的应用研究》',
         'research-1-desc': '探索利用大语言模型技术实现供应链网络数据的自动化采集与知识图谱构建',
         'research-1a-paper': '《Enhancing Supply Chain Transparency in Emerging Economies Using Online Contents and LLMs》',
         'research-1a-journal': 'International Conference on Information Networking (ICOIN)',
-        'research-1a-authors': '金博涵; 孙千佑; 陈立华',
+        'research-1a-authors': '金泊翰; 孙乾祐; 陈立华',
         'research-1b-paper': '《Directed Dynamic Network Edge Interpolation: Taking Supply Chain Networks As an Example》',
         'research-1b-status': '英文期刊在研，聚焦动态网络连边缺失补全，预测企业潜在供应链关系',
         'research-1c-paper': '《从点状到矩阵——物流统计产品及其工具方法建设的比较与展望》',
         'research-1c-authors': '金泊翰; 陈丽华; 郭茜; 赵彦云',
         'research-1c-status': '已接收（第一作者）',
-        'research-2-title': '二、环境与数据科学交叉',
-        'research-2-paper': '《Global Surface HCHO Distribution Derived from Satellite Observations with Neural Networks Technique》',
-        'research-2-authors': 'Jian Guan; Bohan Jin; Yizhe Ding; Wen Wang; Guoxiang Li; Pubu Ciren',
-        'research-2-author': '共同第一作者',
-        'research-2-citation': '被引17次',
-        'research-2-desc': '承担神经网络建模与卫星数据处理工作',
+        'research-2-title': '二、遥感与数据科学交叉',
+        'research-2a-paper': '《基于时空与在线语料数据的物流园区识别、分类与时空演化分析》',
+        'research-2a-authors': '孙抒扬; 金泊翰; 王汶; 郭茜',
+        'research-2a-desc': '借助多模态大模型融合POI数据、遥感影像与互联网信息，实现物流园区自动化识别与时空演化分析，为物流基础设施普查提供技术路径',
+        'research-2b-paper': '《Global Surface HCHO Distribution Derived from Satellite Observations with Neural Networks Technique》',
+        'research-2b-authors': 'Jian Guan; Bohan Jin; Yizhe Ding; Wen Wang; Guoxiang Li; Pubu Ciren',
         'research-3-title': '三、案例与社会研究',
         'research-3-paper': '《可持续价值共创:乡村振兴视域下数字平台企业可持续社会价值创造——基于腾讯酉阳共富乡村的案例研究》',
         'research-3-authors': '雷明; 王钰晴; 吴欣雅; 金泊翰',

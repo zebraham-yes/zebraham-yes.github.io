@@ -131,11 +131,11 @@ a:hover {
 
 <nav class="navbar">
     <ul>
+        <li><a href="index.html" id="nav-home">首页</a></li>
         <li><a href="research.html" id="nav-research">学术研究</a></li>
         <li><a href="honors.html" id="nav-honors">荣誉资质</a></li>
         <li><a href="projects.html" id="nav-projects">项目探索</a></li>
         <li><a href="others.html" id="nav-others">其它创作</a></li>
-        <li><a href="index.html" id="nav-home">首页</a></li>
         <li class="lang-switch">
             <button onclick="toggleLanguage()">EN/中文</button>
         </li>
@@ -152,12 +152,21 @@ a:hover {
     <h2 id="others-title">Other Works</h2>
 
     <div class="work-item">
-        <h3 id="article-1-title">一、学术评论与随笔</h3>
+        <h3 id="article-1-title">一、学术评论</h3>
         <p><strong id="article-1-title-paper">《为什么我们需要情绪劳动，却又缺少优质供给？——论保姆与护理市场有效性问题》</strong></p>
         <p><span class="tag">学术评论</span></p>
         <p id="article-1-author">金泊翰 | 北京大学光华管理学院 博士生 2026</p>
         <p id="article-1-desc">本文从经济学和社会学角度深入分析了护理劳动市场的"柠檬市场"困境，探讨了信息不对称、社会价值贬低、制度性歧视等多重因素如何导致优质护理供给稀缺。文章通过引用国际文献和本土案例，揭示了"市场机制失灵"遇上"社会价值贬低"所形成的恶性循环，并提出价值重估、制度重塑和模式创新的解决方案。</p>
         <p><a href="file/为什么我们需要情绪劳动，却又缺少优质供给？——论保姆与护理市场有效性问题.htm" target="_blank" id="article-1-link">→ 阅读全文</a></p>
+    </div>
+
+    <div class="work-item">
+        <h3 id="article-2-title">二、随笔与散文</h3>
+        <p><strong id="article-2-title-paper">《美育的个人与社会价值》</strong></p>
+        <p><span class="tag">随笔</span></p>
+        <p id="article-2-author">金泊翰</p>
+        <p id="article-2-desc">本文从六个方面探讨了审美教育的本质与价值：什么是美、美是否有高下之分、个人审美的益处、审美对社会的价值、审美与道德的关系，以及美育的终极使命。文章通过生活化的例子，阐释了审美能力如何提升人的感受力、丰富生活体验，并论证了审美教育作为社会"心理稳定器"的重要作用。</p>
+        <p><a href="file/美育的个人与社会价值.htm" target="_blank" id="article-2-link">→ 阅读全文</a></p>
     </div>
 </section>
 
@@ -178,7 +187,13 @@ const translations = {
         'article-1-journal': 'not published',
         'article-1-author': 'Bohan Jin | PhD Student, Guanghua School of Management, Peking University 2026',
         'article-1-desc': 'This paper deeply analyzes the "lemon market" dilemma in the care labor market from economic and sociological perspectives, exploring how multiple factors such as information asymmetry, social value devaluation, and institutional discrimination lead to the scarcity of quality care supply. By citing international literature and local cases, the article reveals the vicious cycle formed when "market mechanism failure" meets "social value devaluation," and proposes solutions including value reassessment, institutional reshaping, and model innovation.',
-        'article-1-link': '→ Read Full Text'
+        'article-1-link': '→ Read Full Text',
+        'article-2-title': 'II. Essays and Prose',
+        'article-2-title-paper': 'The Personal and Social Value of Aesthetic Education',
+        'article-2-journal': '',
+        'article-2-author': 'Bohan Jin',
+        'article-2-desc': 'This article explores the essence and value of aesthetic education from six aspects: what is beauty, whether beauty has hierarchy, the benefits of personal aesthetics, the social value of aesthetics, the relationship between aesthetics and morality, and the ultimate mission of aesthetic education. Through relatable examples, the article elucidates how aesthetic ability enhances human perception and enriches life experiences, and argues the important role of aesthetic education as a social "psychological stabilizer."',
+        'article-2-link': '→ Read Full Text'
     },
     zh: {
         'nav-research': '学术研究',
@@ -188,12 +203,18 @@ const translations = {
         'nav-home': '首页',
         'main-title': '金泊翰 - 其它创作',
         'others-title': '其它创作',
-        'article-1-title': '一、学术评论与随笔',
+        'article-1-title': '一、学术评论',
         'article-1-title-paper': '《为什么我们需要情绪劳动，却又缺少优质供给？——论保姆与护理市场有效性问题》',
         'article-1-journal': '未发表',
         'article-1-author': '金泊翰 | 北京大学光华管理学院 博士生 2026',
         'article-1-desc': '本文从经济学和社会学角度深入分析了护理劳动市场的"柠檬市场"困境，探讨了信息不对称、社会价值贬低、制度性歧视等多重因素如何导致优质护理供给稀缺。文章通过引用国际文献和本土案例，揭示了"市场机制失灵"遇上"社会价值贬低"所形成的恶性循环，并提出价值重估、制度重塑和模式创新的解决方案。',
-        'article-1-link': '→ 阅读全文'
+        'article-1-link': '→ 阅读全文',
+        'article-2-title': '二、随笔与散文',
+        'article-2-title-paper': '《美育的个人与社会价值》',
+        'article-2-journal': '',
+        'article-2-author': '金泊翰',
+        'article-2-desc': '本文从六个方面探讨了审美教育的本质与价值：什么是美、美是否有高下之分、个人审美的益处、审美对社会的价值、审美与道德的关系，以及美育的终极使命。文章通过生活化的例子，阐释了审美能力如何提升人的感受力、丰富生活体验，并论证了审美教育作为社会"心理稳定器"的重要作用。',
+        'article-2-link': '→ 阅读全文'
     }
 };
 
