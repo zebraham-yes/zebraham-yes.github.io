@@ -165,7 +165,7 @@ const translations = {
 
 function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'zh' : 'en';
-    
+
     for (const [id, text] of Object.entries(translations[currentLang])) {
         const element = document.getElementById(id);
         if (element) {
@@ -173,6 +173,9 @@ function toggleLanguage() {
         }
     }
 }
+
+// Initialize page with English on load
+window.addEventListener('DOMContentLoaded', toggleLanguage);
 </script>
 
 </body>
