@@ -91,6 +91,40 @@ section {
 h2 {
     color: #e8491d;
 }
+.work-item {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: #f9f9f9;
+    border-left: 4px solid #50b3a2;
+}
+.work-item h3 {
+    margin-bottom: 15px;
+    color: #e8491d;
+}
+.work-item p {
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+.tag {
+    display: inline-block;
+    background: #50b3a2;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.journal {
+    color: #666;
+    font-style: italic;
+}
+a {
+    color: #e8491d;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 </style>
 </head>
 <body>
@@ -116,7 +150,15 @@ h2 {
 
 <section class="container">
     <h2 id="others-title">Other Works</h2>
-    <p id="others-content">More creative works coming soon...</p>
+
+    <div class="work-item">
+        <h3 id="article-1-title">一、学术评论与随笔</h3>
+        <p><strong id="article-1-title-paper">《为什么我们需要情绪劳动，却又缺少优质供给？——论保姆与护理市场有效性问题》</strong></p>
+        <p><span class="tag">学术评论</span></p>
+        <p id="article-1-author">金泊翰 | 北京大学光华管理学院 博士生 2026</p>
+        <p id="article-1-desc">本文从经济学和社会学角度深入分析了护理劳动市场的"柠檬市场"困境，探讨了信息不对称、社会价值贬低、制度性歧视等多重因素如何导致优质护理供给稀缺。文章通过引用国际文献和本土案例，揭示了"市场机制失灵"遇上"社会价值贬低"所形成的恶性循环，并提出价值重估、制度重塑和模式创新的解决方案。</p>
+        <p><a href="file/为什么我们需要情绪劳动，却又缺少优质供给？——论保姆与护理市场有效性问题.htm" target="_blank" id="article-1-link">→ 阅读全文</a></p>
+    </div>
 </section>
 
 <script>
@@ -131,7 +173,12 @@ const translations = {
         'nav-home': 'Home',
         'main-title': 'Bohan Jin - Other Works',
         'others-title': 'Other Works',
-        'others-content': 'More creative works coming soon...'
+        'article-1-title': 'I. Academic Commentary and Essays',
+        'article-1-title-paper': 'Why Do We Need Emotional Labor, Yet Lack Quality Supply? — On the Effectiveness Issues in Nanny and Care Market',
+        'article-1-journal': 'not published',
+        'article-1-author': 'Bohan Jin | PhD Student, Guanghua School of Management, Peking University 2026',
+        'article-1-desc': 'This paper deeply analyzes the "lemon market" dilemma in the care labor market from economic and sociological perspectives, exploring how multiple factors such as information asymmetry, social value devaluation, and institutional discrimination lead to the scarcity of quality care supply. By citing international literature and local cases, the article reveals the vicious cycle formed when "market mechanism failure" meets "social value devaluation," and proposes solutions including value reassessment, institutional reshaping, and model innovation.',
+        'article-1-link': '→ Read Full Text'
     },
     zh: {
         'nav-research': '学术研究',
@@ -139,9 +186,14 @@ const translations = {
         'nav-projects': '项目探索',
         'nav-others': '其它创作',
         'nav-home': '首页',
-        'main-title': '金博涵 - 其它创作',
+        'main-title': '金泊翰 - 其它创作',
         'others-title': '其它创作',
-        'others-content': '更多创作内容敬请期待...'
+        'article-1-title': '一、学术评论与随笔',
+        'article-1-title-paper': '《为什么我们需要情绪劳动，却又缺少优质供给？——论保姆与护理市场有效性问题》',
+        'article-1-journal': '未发表',
+        'article-1-author': '金泊翰 | 北京大学光华管理学院 博士生 2026',
+        'article-1-desc': '本文从经济学和社会学角度深入分析了护理劳动市场的"柠檬市场"困境，探讨了信息不对称、社会价值贬低、制度性歧视等多重因素如何导致优质护理供给稀缺。文章通过引用国际文献和本土案例，揭示了"市场机制失灵"遇上"社会价值贬低"所形成的恶性循环，并提出价值重估、制度重塑和模式创新的解决方案。',
+        'article-1-link': '→ 阅读全文'
     }
 };
 
