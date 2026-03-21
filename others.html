@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Other Works - Bohan Jin</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 60px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background: #333;
+    padding: 0;
+    margin: 0;
+    border-bottom: #e8491d 3px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar li {
+    margin: 0;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background 0.3s;
+}
+.navbar a:hover {
+    background: #50b3a2;
+}
+.lang-switch {
+    margin-left: 10px;
+}
+.lang-switch button {
+    background: #e8491d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.lang-switch button:hover {
+    background: #c93e17;
+}
+
+header {
+    background: #50b3a2;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+header h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+section {
+    padding: 30px 20px;
+    background: white;
+    margin: 20px 0;
+}
+h2 {
+    color: #e8491d;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="research.html" id="nav-research">学术研究</a></li>
+        <li><a href="honors.html" id="nav-honors">荣誉资质</a></li>
+        <li><a href="projects.html" id="nav-projects">项目探索</a></li>
+        <li><a href="others.html" id="nav-others">其它创作</a></li>
+        <li><a href="index.html" id="nav-home">首页</a></li>
+        <li class="lang-switch">
+            <button onclick="toggleLanguage()">EN/中文</button>
+        </li>
+    </ul>
+</nav>
+
+<header>
+    <div class="container">
+        <h1 id="main-title">Bohan Jin - Other Works</h1>
+    </div>
+</header>
+
+<section class="container">
+    <h2 id="others-title">Other Works</h2>
+    <p id="others-content">More creative works coming soon...</p>
+</section>
+
+<script>
+let currentLang = 'en';
+
+const translations = {
+    en: {
+        'nav-research': 'Academic Research',
+        'nav-honors': 'Honors & Awards',
+        'nav-projects': 'Project Exploration',
+        'nav-others': 'Other Works',
+        'nav-home': 'Home',
+        'main-title': 'Bohan Jin - Other Works',
+        'others-title': 'Other Works',
+        'others-content': 'More creative works coming soon...'
+    },
+    zh: {
+        'nav-research': '学术研究',
+        'nav-honors': '荣誉资质',
+        'nav-projects': '项目探索',
+        'nav-others': '其它创作',
+        'nav-home': '首页',
+        'main-title': '金博涵 - 其它创作',
+        'others-title': '其它创作',
+        'others-content': '更多创作内容敬请期待...'
+    }
+};
+
+function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'zh' : 'en';
+    
+    for (const [id, text] of Object.entries(translations[currentLang])) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.textContent = text;
+        }
+    }
+}
+</script>
+
+</body>
+</html>

@@ -16,6 +16,64 @@ body {
     margin: auto;
     overflow: hidden;
 }
+
+/* Navigation Bar Styles */
+.navbar {
+    background: #333;
+    padding: 0;
+    margin: 0;
+    border-bottom: #e8491d 3px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar li {
+    margin: 0;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background 0.3s;
+}
+.navbar a:hover {
+    background: #50b3a2;
+}
+.lang-switch {
+    margin-left: 10px;
+}
+.lang-switch button {
+    background: #e8491d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.lang-switch button:hover {
+    background: #c93e17;
+}
+
+/* Add padding to body to prevent content from being hidden behind navbar */
+body {
+    padding-top: 60px;
+}
+
 header {
     background: #50b3a2;
     color: white;
@@ -30,61 +88,148 @@ header h1 {
     line-height: 1.5;
 }
 section {
-    padding: 20px;
+    padding: 30px 20px;
     background: white;
     margin: 20px 0;
 }
 h2 {
     color: #e8491d;
 }
+.profile-info {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 2;
+    margin-top: 30px;
+}
+.profile-info p {
+    margin: 15px 0;
+}
+.profile-info strong {
+    color: #e8491d;
+}
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+    border: 4px solid #50b3a2;
+    object-fit: cover;
+}
+.education-section {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 4px solid #50b3a2;
+    margin-top: 30px;
+}
+.education-section h3 {
+    color: #e8491d;
+    margin-top: 0;
+}
+.education-section p {
+    line-height: 1.8;
+    margin: 10px 0;
+}
 </style>
 </head>
 <body>
 
+<nav class="navbar">
+    <ul>
+        <li><a href="research.html" id="nav-research">学术研究</a></li>
+        <li><a href="honors.html" id="nav-honors">荣誉资质</a></li>
+        <li><a href="projects.html" id="nav-projects">项目探索</a></li>
+        <li><a href="others.html" id="nav-others">其它创作</a></li>
+        <li class="lang-switch">
+            <button onclick="toggleLanguage()">EN/中文</button>
+        </li>
+    </ul>
+</nav>
+
 <header>
     <div class="container">
-        <h1>Bohan Jin - Personal Homepage</h1>
+        <h1 id="main-title">Bohan Jin - Personal Homepage</h1>
     </div>
 </header>
 
-<section class="container">
-    <h2>Education</h2>
-    <p><strong>Ph.D. Candidate:</strong> Peking University, Major in Management Science and Information Systems<br>
-       Courses: Information system studies, IO method, econometrics, deep learning<br>
-       Research Focus: Supply chain network data extraction and analysis
-    </p>
-    <p><strong>Bachelor:</strong> Renmin University of China, Major in Environmental Science<br>
-       Courses: Sciences, remote sensing, GIS, economics, data science, machine learning
-    </p>
+<section class="container" id="profile">
+    <img src="img/证件照.jpg" alt="Avatar" class="avatar">
+    <div class="profile-info">
+        <p><strong id="name-label">姓名：</strong><span id="name">金泊翰</span></p>
+        <p><strong id="position-label">身份：</strong><span id="position">北京大学光华管理学院 管理科学与信息系统专业 博士生</span></p>
+        <p><strong id="research-label">研究方向：</strong><span id="research-areas">大语言模型、供应链网络、数据采集与智能分析、图神经网络</span></p>
+    </div>
+
+    <div class="education-section">
+        <h3 id="education-title">教育背景</h3>
+        <p><strong id="phd-label">Ph.D. Candidate:</strong> <span id="phd-info">Peking University, Major in Management Science and Information Systems</span></p>
+        <p id="phd-courses">Courses: Information system studies, IO method, econometrics, deep learning</p>
+        <p id="phd-focus">Research Focus: Supply chain network data extraction and analysis</p>
+        <hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
+        <p><strong id="bachelor-label">Bachelor:</strong> <span id="bachelor-info">Renmin University of China, Major in Environmental Science</span></p>
+        <p id="bachelor-courses">Courses: Sciences, remote sensing, GIS, economics, data science, machine learning</p>
+    </div>
 </section>
 
-<section class="container">
-    <h2>Project Experience</h2>
-    <article>
-        <h3>Enhancing Supply Chain Transparency in Emerging Economies Using Online Contents and LLMs (Ph.D. study)</h3>
-        <p>Mar 2024 - Present</p>
-        <p>Developed a Supply Chain Knowledge Graph Mining System integrating advanced LLMs with web crawler technology.</p>
-    </article>
-    <article>
-        <h3>Global Surface HCHO Concentration Prediction Based on Sentinel-5P Satellite Data (Bachelor study)</h3>
-        <p>Jan 2021 - Jul 2022</p>
-        <p>Published article on Remote Sensing.</p>
-    </article>
-    <article>
-        <h3>Object-Based CNN on UAV Image Segmentation (Innovation Fund for University Student at RUC)</h3>
-        <p>Sep 2020 - Nov 2021</p>
-        <p>Operated under a state-funded College Student Innovative Experiment Program.</p>
-    </article>
-</section>
+<script>
+let currentLang = 'en';
 
-<section class="container">
-    <h2>Honors & Awards</h2>
-    <ul>
-        <li>2nd Prize of Beijing during National Mathematic Modeling Competition, 2020</li>
-        <li>Finalist Prize during The Mathematical Contest in Modeling, 2021</li>
-        <li>National 3rd Prize in National College Students Mathematics Competition, 2019</li>
-    </ul>
-</section>
+const translations = {
+    en: {
+        'nav-research': 'Academic Research',
+        'nav-honors': 'Honors & Awards',
+        'nav-projects': 'Project Exploration',
+        'nav-others': 'Other Works',
+        'main-title': 'Bohan Jin - Personal Homepage',
+        'name-label': 'Name: ',
+        'name': 'Bohan Jin',
+        'position-label': 'Position: ',
+        'position': 'Ph.D. Candidate, Guanghua School of Management, Peking University, Major in Management Science and Information Systems',
+        'research-label': 'Research Interests: ',
+        'research-areas': 'Large Language Models, Supply Chain Networks, Data Collection and Intelligent Analysis, Graph Neural Networks',
+        'education-title': 'Education',
+        'phd-label': 'Ph.D. Candidate: ',
+        'phd-info': 'Peking University, Major in Management Science and Information Systems',
+        'phd-courses': 'Courses: Information system studies, IO method, econometrics, deep learning',
+        'phd-focus': 'Research Focus: Supply chain network data extraction and analysis',
+        'bachelor-label': 'Bachelor: ',
+        'bachelor-info': 'Renmin University of China, Major in Environmental Science',
+        'bachelor-courses': 'Courses: Sciences, remote sensing, GIS, economics, data science, machine learning'
+    },
+    zh: {
+        'nav-research': '学术研究',
+        'nav-honors': '荣誉资质',
+        'nav-projects': '项目探索',
+        'nav-others': '其它创作',
+        'main-title': '金泊翰 - 个人主页',
+        'name-label': '姓名：',
+        'name': '金泊翰',
+        'position-label': '身份：',
+        'position': '北京大学光华管理学院 管理科学与信息系统专业 博士生',
+        'research-label': '研究方向：',
+        'research-areas': '大语言模型、供应链网络、数据采集与智能分析、图神经网络',
+        'education-title': '教育背景',
+        'phd-label': '博士生：',
+        'phd-info': '北京大学，管理科学与信息系统专业',
+        'phd-courses': '课程：信息系统研究、IO方法、计量经济学、深度学习',
+        'phd-focus': '研究重点：供应链网络数据提取与分析',
+        'bachelor-label': '本科：',
+        'bachelor-info': '中国人民大学，环境科学专业',
+        'bachelor-courses': '课程：科学、遥感、GIS、经济学、数据科学、机器学习'
+    }
+};
+
+function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'zh' : 'en';
+    
+    for (const [id, text] of Object.entries(translations[currentLang])) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.textContent = text;
+        }
+    }
+}
+</script>
 
 </body>
 </html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Honors & Awards - Bohan Jin</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 60px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background: #333;
+    padding: 0;
+    margin: 0;
+    border-bottom: #e8491d 3px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar li {
+    margin: 0;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background 0.3s;
+}
+.navbar a:hover {
+    background: #50b3a2;
+}
+.lang-switch {
+    margin-left: 10px;
+}
+.lang-switch button {
+    background: #e8491d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.lang-switch button:hover {
+    background: #c93e17;
+}
+
+header {
+    background: #50b3a2;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+header h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+section {
+    padding: 30px 20px;
+    background: white;
+    margin: 20px 0;
+}
+h2 {
+    color: #e8491d;
+}
+ul {
+    line-height: 2;
+}
+.honor-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 4px solid #e8491d;
+}
+.honor-item h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+.honor-item .year {
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.honor-item .description {
+    margin: 0;
+    color: #444;
+}
+.honor-list {
+    list-style: none;
+    padding: 0;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="research.html" id="nav-research">学术研究</a></li>
+        <li><a href="honors.html" id="nav-honors">荣誉资质</a></li>
+        <li><a href="projects.html" id="nav-projects">项目探索</a></li>
+        <li><a href="others.html" id="nav-others">其它创作</a></li>
+        <li><a href="index.html" id="nav-home">首页</a></li>
+        <li class="lang-switch">
+            <button onclick="toggleLanguage()">EN/中文</button>
+        </li>
+    </ul>
+</nav>
+
+<header>
+    <div class="container">
+        <h1 id="main-title">Bohan Jin - Honors & Awards</h1>
+    </div>
+</header>
+
+<section class="container">
+    <h2 id="honors-title">Honors & Awards</h2>
+    
+    <div class="honor-item">
+        <div class="year">2023</div>
+        <h3 id="honor-1">Golden Award, Haier RRS Innovation Training Camp - "Optimal Load Consolidation Model Application Based on Digitalization"</h3>
+    </div>
+
+    <div class="honor-item">
+        <div class="year">2021</div>
+        <h3 id="honor-2">Finalist Prize, Mathematical Contest in Modeling - "Exploring Artists' Network: Features, Interactions and Dynamics"</h3>
+    </div>
+
+    <div class="honor-item">
+        <div class="year">2020</div>
+        <h3 id="honor-3">2nd Prize of Beijing, National Mathematic Modeling Competition - "Temperature Control Model of Reflow Oven Based on Finite Difference and Particle Swarm Optimization"</h3>
+    </div>
+
+    <div class="honor-item">
+        <div class="year">2019</div>
+        <h3 id="honor-4">Selected for "Guanghua Siyuan" Outstanding Student Training Program</h3>
+    </div>
+
+    <div class="honor-item">
+        <div class="year">2019</div>
+        <h3 id="honor-5">National 3rd Prize, National College Students Mathematics Competition</h3>
+    </div>
+
+    <div class="honor-item">
+        <h3 id="honor-6">Intermediate Logistics Engineer Professional Qualification, China Federation of Logistics & Purchasing</h3>
+    </div>
+</section>
+
+<script>
+let currentLang = 'en';
+
+const translations = {
+    en: {
+        'nav-research': 'Academic Research',
+        'nav-honors': 'Honors & Awards',
+        'nav-projects': 'Project Exploration',
+        'nav-others': 'Other Works',
+        'nav-home': 'Home',
+        'main-title': 'Bohan Jin - Honors & Awards',
+        'honors-title': 'Honors & Awards',
+        'honor-1': 'Golden Award, Haier RRS Innovation Training Camp - "Optimal Load Consolidation Model Application Based on Digitalization"',
+        'honor-2': 'Finalist Prize, Mathematical Contest in Modeling - "Exploring Artists\' Network: Features, Interactions and Dynamics"',
+        'honor-3': '2nd Prize of Beijing, National Mathematic Modeling Competition - "Temperature Control Model of Reflow Oven Based on Finite Difference and Particle Swarm Optimization"',
+        'honor-4': 'Selected for "Guanghua Siyuan" Outstanding Student Training Program',
+        'honor-5': 'National 3rd Prize, National College Students Mathematics Competition',
+        'honor-6': 'Intermediate Logistics Engineer Professional Qualification, China Federation of Logistics & Purchasing'
+    },
+    zh: {
+        'nav-research': '学术研究',
+        'nav-honors': '荣誉资质',
+        'nav-projects': '项目探索',
+        'nav-others': '其它创作',
+        'nav-home': '首页',
+        'main-title': '金博涵 - 荣誉资质',
+        'honors-title': '荣誉奖项',
+        'honor-1': '金奖，海尔日日顺创客训练营 - "基于数字化的最优拼载模型应用"',
+        'honor-2': '特等提名奖，美国大学生数学建模竞赛 - "探索艺术家网络：特征、交互与动态"',
+        'honor-3': '北京市二等奖，高教社杯数学建模竞赛 - "基于有限差分和粒子群算法的回焊炉温度控制模型"',
+        'honor-4': '入选清华、人大、复旦等六校"光华思源"优秀学生培养计划',
+        'honor-5': '全国大学生数学竞赛全国三等奖',
+        'honor-6': '中物联"中级物流师"职业资格'
+    }
+};
+
+function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'zh' : 'en';
+    
+    for (const [id, text] of Object.entries(translations[currentLang])) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.textContent = text;
+        }
+    }
+}
+</script>
+
+</body>
+</html>
